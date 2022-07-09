@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./img/logoweather.jpg" type="image/jpg">
+</head>
+
+<body>
+
+    {{>navbar}}
+
+
+
+    <div class="container-fluid main_header weather">
+        <div class="row">
+            <div class="weather-box">
+
+                <div class="main_content">
+                    <form action="" class="temp_form">
+                        <input type="text" id="cityName" placeholder="Enter your city" autocomplete="off">
+                        <input type="submit" id="submitBtn" value="search">
+                    </form>
+                </div>
+
+                <div class="tempInformation">
+                    <div class="top_Layer">
+                        <p id="day">Tuesday</p>
+                        <p id="today_data">13 Oct</p>
+                    </div>
+                </div>
+                <div class="main_Layer">
+                    <p id="city_name"> Get Output</p>
+                    <div class="middle_layer data_hide">
+                        <p id="temp">0</p><sup>0</sup><span>C</span>
+
+                        <P id="temp_status"></P>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    {{>footer}}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+</body>
